@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://q1pw65p3cp67"]
+
+[ext_resource type="Script" path="res://Scenes/bird.gd" id="1_p0lk2"]
+[ext_resource type="Texture2D" uid="uid://mjfjjm7ul3ul" path="res://aviao.png" id="1_w5vl2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ngpn2"]
+radius = 14.0
+height = 28.0
+
+[node name="Bird" type="CharacterBody2D"]
+script = ExtResource("1_p0lk2")
+gravity = null
+jump_force = null
+rotation_speed = null
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_w5vl2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_ngpn2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

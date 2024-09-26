@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://btmfi54xsqgvr"]
+
+[ext_resource type="PackedScene" uid="uid://q1pw65p3cp67" path="res://Scenes/bird.tscn" id="1_08wj0"]
+[ext_resource type="Texture2D" uid="uid://bqpwn1wp68tie" path="res://New Piskel.png" id="1_iu2mv"]
+[ext_resource type="PackedScene" uid="uid://d1380yyjsl7in" path="res://Scenes/ground.tscn" id="3_54b1e"]
+
+[node name="main" type="Node"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(3.5, -0.999985)
+scale = Vector2(9.03125, 16)
+texture = ExtResource("1_iu2mv")
+
+[node name="Bird" parent="." instance=ExtResource("1_08wj0")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Ground" parent="." instance=ExtResource("3_54b1e")]
+position = Vector2(-66, 229)
