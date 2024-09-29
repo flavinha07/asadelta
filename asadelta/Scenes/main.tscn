@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://btmfi54xsqgvr"]
+[gd_scene load_steps=5 format=3 uid="uid://btmfi54xsqgvr"]
 
 [ext_resource type="PackedScene" uid="uid://q1pw65p3cp67" path="res://Scenes/bird.tscn" id="1_08wj0"]
 [ext_resource type="Texture2D" uid="uid://bqpwn1wp68tie" path="res://New Piskel.png" id="1_iu2mv"]
 [ext_resource type="PackedScene" uid="uid://d1380yyjsl7in" path="res://Scenes/ground.tscn" id="3_54b1e"]
+[ext_resource type="PackedScene" uid="uid://mnh5ky04ata5" path="res://Scenes/pipes_pawner.tscn" id="4_8fc1l"]
 
 [node name="main" type="Node"]
 
@@ -17,3 +18,6 @@ texture = ExtResource("1_iu2mv")
 
 [node name="Ground" parent="." instance=ExtResource("3_54b1e")]
 position = Vector2(-66, 229)
+scale = Vector2(1.00601, 1)
+
+[node name="PipesPawner" parent="." instance=ExtResource("4_8fc1l")]

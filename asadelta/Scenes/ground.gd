@@ -2,6 +2,8 @@ extends Node2D
 
 class_name Ground
 
+signal bird_crashed
+
 @export var speed = -150
 
 @onready var sprite1: Sprite2D = $Ground1/Sprite2D
@@ -22,3 +24,12 @@ func _process(delta):
 		
 	if sprite2.global_position.x < -sprite2.texture.get_width():
 		sprite2.global_position.x = sprite1.global_position.x + sprite1.texture.get_width()
+
+
+func _on_body_entered(body: Node2D) -> void:
+	bird_crashed.emit()
+	stop()
+	(body as Bird).stop()
+	
+func stop():
+	speed = 0
