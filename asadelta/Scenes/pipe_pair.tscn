@@ -1,53 +1,48 @@
-[gd_scene load_steps=7 format=3 uid="uid://cytijn5uu6w4"]
+[gd_scene load_steps=7 format=3 uid="uid://dyxb3lqiic1cd"]
 
 [ext_resource type="Texture2D" uid="uid://dngpkstkglhnp" path="res://arvore.png" id="1_58rb3"]
 [ext_resource type="Script" path="res://Scenes/pipe_pair.gd" id="1_jentg"]
-[ext_resource type="Texture2D" uid="uid://bmqc2veeq4owd" path="res://nuvem2.png" id="1_unof3"]
+[ext_resource type="Texture2D" uid="uid://0ab1vsfmdvas" path="res://passaro2.png" id="2_2nyeb"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nets4"]
-size = Vector2(262, 71)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_36c1o"]
+size = Vector2(174, 52)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hqh67"]
-radius = 37.0
-height = 286.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g21dp"]
+radius = 23.0
+height = 205.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p1ms0"]
-size = Vector2(6, 148)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_upigo"]
+size = Vector2(12, 90.5)
 
-[node name="Pipe_pair" type="Node2D"]
+[node name="pipe_pair" type="Node2D"]
 script = ExtResource("1_jentg")
 
 [node name="TopPipe" type="Area2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="TopPipe"]
-scale = Vector2(12.8437, 12.7813)
-texture = ExtResource("1_unof3")
+position = Vector2(-8, 189)
+scale = Vector2(0.150065, 0.0770834)
+texture = ExtResource("2_2nyeb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopPipe"]
-position = Vector2(-10, -23)
-shape = SubResource("RectangleShape2D_nets4")
+position = Vector2(-10, 189)
+shape = SubResource("RectangleShape2D_36c1o")
 
 [node name="BottomPipe" type="Area2D" parent="."]
-position = Vector2(-2, 4)
-scale = Vector2(1.11742, 1)
+position = Vector2(2, 161)
 
 [node name="Sprite2D" type="Sprite2D" parent="BottomPipe"]
-position = Vector2(0, 200)
-scale = Vector2(9.3125, 15.2813)
+position = Vector2(-1.99999, 178.75)
+scale = Vector2(7.1875, 10.7969)
 texture = ExtResource("1_58rb3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomPipe"]
-position = Vector2(6, 280)
-shape = SubResource("CapsuleShape2D_hqh67")
+position = Vector2(1, 245.5)
+shape = SubResource("CapsuleShape2D_g21dp")
 
 [node name="Scored" type="Area2D" parent="."]
-position = Vector2(90, 2)
-scale = Vector2(1.09213, 1.64854)
+position = Vector2(3, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scored"]
-position = Vector2(-36, 89)
-shape = SubResource("RectangleShape2D_p1ms0")
-
-[connection signal="body_entered" from="TopPipe" to="." method="_on_body_entered"]
-[connection signal="body_entered" from="BottomPipe" to="." method="_on_body_entered"]
-[connection signal="body_entered" from="Scored" to="." method="_on_point_scored"]
+position = Vector2(31, 260)
+shape = SubResource("RectangleShape2D_upigo")

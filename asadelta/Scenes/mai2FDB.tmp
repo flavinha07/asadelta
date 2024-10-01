@@ -1,12 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://btmfi54xsqgvr"]
+[gd_scene load_steps=7 format=3 uid="uid://btmfi54xsqgvr"]
 
 [ext_resource type="PackedScene" uid="uid://q1pw65p3cp67" path="res://Scenes/bird.tscn" id="1_08wj0"]
 [ext_resource type="Script" path="res://Scenes/game_manager.gd" id="1_hncm8"]
-[ext_resource type="Texture2D" uid="uid://cmw1qc6xjylku" path="res://fundo4.jpg" id="2_yix2w"]
+[ext_resource type="Texture2D" uid="uid://bqpwn1wp68tie" path="res://New Piskel.png" id="1_iu2mv"]
 [ext_resource type="PackedScene" uid="uid://d1380yyjsl7in" path="res://Scenes/ground.tscn" id="3_54b1e"]
 [ext_resource type="PackedScene" uid="uid://mnh5ky04ata5" path="res://Scenes/pipes_spawner.tscn" id="4_8fc1l"]
 [ext_resource type="PackedScene" uid="uid://c5l2cb0ew78qx" path="res://Scenes/fade.tscn" id="6_jc4ba"]
-[ext_resource type="PackedScene" uid="uid://uijw28i6p4p6" path="res://Scenes/ui.tscn" id="7_sct44"]
 
 [node name="main" type="Node"]
 
@@ -14,9 +13,9 @@
 script = ExtResource("1_hncm8")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1.14441e-05, 2.49999)
-scale = Vector2(0.805556, 1.44722)
-texture = ExtResource("2_yix2w")
+position = Vector2(3.5, -0.999985)
+scale = Vector2(9.03125, 16)
+texture = ExtResource("1_iu2mv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -29,5 +28,3 @@ scale = Vector2(1.00601, 1)
 [node name="Bird" parent="." instance=ExtResource("1_08wj0")]
 
 [node name="Fade" parent="." instance=ExtResource("6_jc4ba")]
-
-[node name="UI" parent="." instance=ExtResource("7_sct44")]
