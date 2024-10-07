@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://la4h5df24a82"
-path="res://.godot/imported/fundo4.jpg-86b9dbe295277f467751bfb03b4448ac.ctex"
+uid="uid://glqw3f61bgpc"
+path="res://.godot/imported/gameover-removebg-preview.png-f9896a04ea405d211a2883fbcee8936b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fundo4.jpg"
-dest_files=["res://.godot/imported/fundo4.jpg-86b9dbe295277f467751bfb03b4448ac.ctex"]
+source_file="res://gameover-removebg-preview.png"
+dest_files=["res://.godot/imported/gameover-removebg-preview.png-f9896a04ea405d211a2883fbcee8936b.ctex"]
 
 [params]
 

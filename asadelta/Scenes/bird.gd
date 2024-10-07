@@ -5,13 +5,13 @@ class_name Bird
 signal game_started
 
 @export var gravity = 900.0
-@export var jump_force = -300
+@export var jump_force = 300
 @export var rotation_speed = 2 
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 var max_speed = 400
-var is_started = false
+var is_started = false  
 var  should_process_input = true
 
 func _ready():

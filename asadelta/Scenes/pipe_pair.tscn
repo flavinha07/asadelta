@@ -2,17 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://dngpkstkglhnp" path="res://arvore.png" id="1_58rb3"]
 [ext_resource type="Script" path="res://Scenes/pipe_pair.gd" id="1_jentg"]
-[ext_resource type="Texture2D" uid="uid://0ab1vsfmdvas" path="res://passaro2.png" id="2_2nyeb"]
+[ext_resource type="Texture2D" uid="uid://d0ljqgbvsg8rn" path="res://passaro2-removebg-preview.png" id="2_anr7t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36c1o"]
-size = Vector2(174, 52)
+size = Vector2(52, 45)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g21dp"]
-radius = 23.0
-height = 205.0
+radius = 28.0
+height = 211.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_upigo"]
-size = Vector2(12, 90.5)
+size = Vector2(12, 97.25)
 
 [node name="pipe_pair" type="Node2D"]
 script = ExtResource("1_jentg")
@@ -20,12 +20,12 @@ script = ExtResource("1_jentg")
 [node name="TopPipe" type="Area2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="TopPipe"]
-position = Vector2(-8, 189)
-scale = Vector2(0.150065, 0.0770834)
-texture = ExtResource("2_2nyeb")
+position = Vector2(-8, 200.694)
+scale = Vector2(0.150065, 0.131349)
+texture = ExtResource("2_anr7t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TopPipe"]
-position = Vector2(-10, 189)
+position = Vector2(-7, 200.5)
 shape = SubResource("RectangleShape2D_36c1o")
 
 [node name="BottomPipe" type="Area2D" parent="."]
@@ -44,5 +44,5 @@ shape = SubResource("CapsuleShape2D_g21dp")
 position = Vector2(3, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Scored"]
-position = Vector2(31, 260)
+position = Vector2(20, 248.375)
 shape = SubResource("RectangleShape2D_upigo")

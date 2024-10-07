@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://q1pw65p3cp67" path="res://Scenes/bird.tscn" id="1_08wj0"]
 [ext_resource type="Script" path="res://Scenes/game_manager.gd" id="1_hncm8"]
-[ext_resource type="Texture2D" uid="uid://cmw1qc6xjylku" path="res://fundo4.jpg" id="2_yix2w"]
+[ext_resource type="Texture2D" uid="uid://la4h5df24a82" path="res://fundo4.jpg" id="2_yix2w"]
 [ext_resource type="PackedScene" uid="uid://d1380yyjsl7in" path="res://Scenes/ground.tscn" id="3_54b1e"]
 [ext_resource type="PackedScene" uid="uid://mnh5ky04ata5" path="res://Scenes/pipes_spawner.tscn" id="4_8fc1l"]
 [ext_resource type="PackedScene" uid="uid://c5l2cb0ew78qx" path="res://Scenes/fade.tscn" id="6_jc4ba"]

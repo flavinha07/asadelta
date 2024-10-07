@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://la4h5df24a82"
-path="res://.godot/imported/fundo4.jpg-86b9dbe295277f467751bfb03b4448ac.ctex"
+uid="uid://d0ljqgbvsg8rn"
+path="res://.godot/imported/passaro2-removebg-preview.png-fa1247059c94bd7f27484411dd595e2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fundo4.jpg"
-dest_files=["res://.godot/imported/fundo4.jpg-86b9dbe295277f467751bfb03b4448ac.ctex"]
+source_file="res://passaro2-removebg-preview.png"
+dest_files=["res://.godot/imported/passaro2-removebg-preview.png-fa1247059c94bd7f27484411dd595e2b.ctex"]
 
 [params]
 

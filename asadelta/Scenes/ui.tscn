@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://uijw28i6p4p6"]
 
 [ext_resource type="Script" path="res://Scenes/ui.gd" id="1_8q1fe"]
-[ext_resource type="Texture2D" uid="uid://8fdn5lbbk1kp" path="res://images.png" id="2_xdi86"]
+[ext_resource type="Texture2D" uid="uid://glqw3f61bgpc" path="res://gameover-removebg-preview.png" id="2_fnudk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g73ii"]
 bg_color = Color(1, 0.7819, 0.114566, 1)
@@ -31,7 +31,7 @@ size_flags_vertical = 4
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/GameOverBox"]
 layout_mode = 2
-texture = ExtResource("2_xdi86")
+texture = ExtResource("2_fnudk")
 
 [node name="Panel" type="Panel" parent="MarginContainer/GameOverBox"]
 custom_minimum_size = Vector2(200, 100)

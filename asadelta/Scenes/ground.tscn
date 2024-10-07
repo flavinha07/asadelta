@@ -1,11 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1380yyjsl7in"]
+[gd_scene load_steps=5 format=3 uid="uid://d1380yyjsl7in"]
 
 [ext_resource type="Script" path="res://Scenes/ground.gd" id="1_nbey1"]
-[ext_resource type="Texture2D" uid="uid://cjpyv3fpooirl" path="res://chao3.png" id="2_6ndbe"]
-[ext_resource type="Texture2D" path="res://chao2png.png" id="2_uv4iy"]
+[ext_resource type="Texture2D" uid="uid://d3qtphbj1fgpw" path="res://chao3-removebg-preview.png" id="2_3km7g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2jlj"]
-size = Vector2(316.5, 17)
+size = Vector2(317.25, 19)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_juwji"]
 size = Vector2(304, 19)
@@ -18,19 +17,19 @@ script = ExtResource("1_nbey1")
 [node name="Sprite2D" type="Sprite2D" parent="Ground1"]
 position = Vector2(37.281, -2)
 scale = Vector2(0.89045, 0.289086)
-texture = ExtResource("2_6ndbe")
+texture = ExtResource("2_3km7g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground1"]
-position = Vector2(35.75, -9)
+position = Vector2(37.375, -9.5)
 shape = SubResource("RectangleShape2D_c2jlj")
 
 [node name="Ground2" type="Area2D" parent="."]
 position = Vector2(76, 31)
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground2"]
-position = Vector2(281, -25.5)
-scale = Vector2(0.365198, 0.339896)
-texture = ExtResource("2_uv4iy")
+position = Vector2(273, -33.2953)
+scale = Vector2(0.849266, 0.296085)
+texture = ExtResource("2_3km7g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2"]
 position = Vector2(272, -40.5)
