@@ -17,6 +17,7 @@ func _ready():
 	
 func on_game_started():
 	pipes_spawner.start_spawning_pipes()
+	
 
 func end_game():
 	if fade != null:
@@ -24,10 +25,8 @@ func end_game():
 	ground.stop()
 	bird.kill()
 	pipes_spawner.stop()
-	ui.on_game_over()
+	ui.on_game_over(true)
 	
 func on_point_scored():
 	points += 1
 	ui.update_points(points)
-	
-	

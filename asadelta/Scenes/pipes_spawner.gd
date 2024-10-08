@@ -2,12 +2,10 @@ extends Node
 
 class_name PipeSpawner
 
-signal bird_crashed
-signal point_scored
-
-
 var pipe_pair_scene = preload("res://Scenes/pipe_pair.tscn")
 
+signal bird_crashed
+signal point_scored
 
 @export var pipe_speed = -150
 
@@ -31,7 +29,7 @@ func spawn_pipe():
 	
 	pipe.bird_entered.connect(on_bird_entered)
 	pipe.point_scored.connect(on_point_scored)
-	
+	pipe.set_speed(pipe_speed)
 	
 	
 func on_bird_entered():
@@ -44,5 +42,5 @@ func stop():
 		(pipe as PipePair).speed = 0
 		
 func on_point_scored():
-		point_scored.emit()
+	point_scored.emit()
 	

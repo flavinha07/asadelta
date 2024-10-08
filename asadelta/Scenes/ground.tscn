@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://d3qtphbj1fgpw" path="res://chao3-removebg-preview.png" id="2_3km7g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2jlj"]
-size = Vector2(317.25, 19)
+size = Vector2(359.625, 24)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_juwji"]
-size = Vector2(304, 19)
+size = Vector2(376, 24)
 
 [node name="Ground" type="Node2D"]
 script = ExtResource("1_nbey1")
@@ -15,24 +15,24 @@ script = ExtResource("1_nbey1")
 [node name="Ground1" type="Area2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground1"]
-position = Vector2(37.281, -2)
-scale = Vector2(0.89045, 0.289086)
+position = Vector2(135.64, 9.48226)
+scale = Vector2(1.00911, 0.358432)
 texture = ExtResource("2_3km7g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground1"]
-position = Vector2(37.375, -9.5)
+position = Vector2(133.813, -7)
 shape = SubResource("RectangleShape2D_c2jlj")
 
 [node name="Ground2" type="Area2D" parent="."]
-position = Vector2(76, 31)
+position = Vector2(350, 2)
 
 [node name="Sprite2D" type="Sprite2D" parent="Ground2"]
-position = Vector2(273, -33.2953)
-scale = Vector2(0.849266, 0.296085)
+position = Vector2(149.566, 7.35235)
+scale = Vector2(1.0413, 0.364709)
 texture = ExtResource("2_3km7g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2"]
-position = Vector2(272, -40.5)
+position = Vector2(149, -9)
 shape = SubResource("RectangleShape2D_juwji")
 
 [connection signal="body_entered" from="Ground1" to="." method="_on_body_entered"]

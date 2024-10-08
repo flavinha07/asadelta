@@ -6,8 +6,8 @@ signal bird_crashed
 
 @export var speed = -150
 
-@onready var sprite1: Sprite2D = $Ground1/Sprite2D
-@onready var sprite2: Sprite2D = $Ground2/Sprite2D
+@onready var sprite1 = $Ground1/Sprite2D
+@onready var sprite2 = $Ground2/Sprite2D
 
 func _ready():
 	sprite2.global_position.x = sprite1.global_position.x + sprite1.texture.get_width()
@@ -24,7 +24,7 @@ func _process(delta):
 		sprite2.global_position.x = sprite1.global_position.x + sprite1.texture.get_width()
 
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(body):
 	bird_crashed.emit()
 	stop()
 	(body as Bird).stop()
